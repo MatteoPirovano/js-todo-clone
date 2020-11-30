@@ -24,9 +24,9 @@ $(document).ready(function() {
 
   $("input").keypress(function(event){
     if(event.which==13){
-      var newTask = $('imput').val();
+      var newTask = $('input').val();
       var context = {
-         text: newTask
+         list : newTask
       };
       var html = template(context);
       $('#page').append(html);
